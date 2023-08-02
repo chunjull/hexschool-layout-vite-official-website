@@ -1,4 +1,86 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header {
+  background-color: $primary;
+  padding-top: map-get($spacers, 5);
+  padding-bottom: map-get($spacers, 5);
+
+  @include mobile {
+    padding-bottom: 0;
+  }
+}
+
+.headerContent {
+  @include mobile {
+    align-items: start;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.logo {
+  width: 80px;
+
+  @include mobile {
+    margin-left: map-get($spacers, 5);
+    margin-bottom: map-get($spacers, 5);
+  }
+}
+
+.navbar {
+  gap: map-get($spacers, 12);
+
+  @include mobile {
+    width: 100%;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+}
+
+.navItem {
+  @include mobile {
+    text-align: center;
+    width: 50%;
+    border: 1px solid $white;
+    padding-top: map-get($spacers, 4);
+    padding-bottom: map-get($spacers, 4);
+  }
+
+  &:hover {
+    @include mobile {
+        cursor: pointer;
+        background-color: $success;
+    }
+  }
+
+  a {
+    color: $white;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      border-radius: 4px;
+      bottom: 0;
+      left: 0;
+      background-color: $white;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
 }

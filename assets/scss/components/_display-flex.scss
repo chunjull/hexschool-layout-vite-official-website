@@ -1,0 +1,15 @@
+.d-flex {
+    display: flex;
+}
+
+@each $item in flex-start, flex-end, center, space-around, space-between {
+    .justify-content-#{$item} {
+        justify-content: $item;
+    }
+}
+
+@each $item in flex-start, flex-end, center, stretch, baseline {
+    .align-items-#{$item} {
+        align-items: $item;
+    }
+}

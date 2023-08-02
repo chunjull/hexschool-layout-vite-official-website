@@ -1,4 +1,148 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer {
+  background-color: $primary;
+  padding-top: map-get($spacers, 11);
+  padding-bottom: map-get($spacers, 8);
+
+  @include mobile {
+    padding-top: map-get($spacers, 7);
+    padding-bottom: map-get($spacers, 7);
+  }
+}
+
+.footerNavbar {
+  gap: map-get($spacers, 11);
+  margin-bottom: map-get($spacers, 7);
+
+  @include mobile {
+    display: none;
+    margin-bottom: 0;
+  }
+
+  .footerNavItem a {
+    color: $white;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      border-radius: 4px;
+      bottom: 0;
+      left: 0;
+      background-color: $white;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
+
+.socialList {
+  font-size: map-get($font-size, 10);
+  gap: map-get($spacers, 8);
+
+  .socialItem {
+    @include pad {
+      font-size: map-get($font-size, 9);
+    }
+  }
+
+  a {
+    line-height: 1;
+
+    &:hover .fa-brands{
+      color: $gray-300;
+    }
+
+    .fa-brands {
+      color: $white;
+    }
+
+    @include mobile {
+      font-size: map-get($font-size, 6);
+    }
+  }
+}
+
+.contactList {
+  margin-bottom: map-get($spacers, 8);
+
+  @include mobile {
+    margin-bottom: map-get($spacers, 7);
+  }
+
+  a {
+    color: $white;
+    font-size: map-get($font-size, 8);
+
+    &:hover {
+      color: $gray-300;
+    }
+
+    span {
+      vertical-align: middle;
+      font-size: map-get($font-size, 8);
+      margin-right: map-get($spacers, 6);
+    }
+
+    @include mobile {
+      font-size: map-get($font-size, 2);
+    }
+  }
+}
+
+.copyrightList {
+  padding-top: map-get($spacers, 8);
+  border-top: 1px solid $white;
+
+  @include mobile {
+    padding-top: map-get($spacers, 5);
+    flex-direction: column;
+    gap: map-get($spacers, 3);
+  }
+
+  .copyrightItem {
+    color: $white;
+  }
+}
+
+.termsList {
+  gap: map-get($spacers, 11);
+
+  @include mobile {
+    flex-direction: column;
+    gap: map-get($spacers, 3);
+  }
+
+  .termsItem a {
+    color: $white;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      border-radius: 4px;
+      bottom: 0;
+      left: 0;
+      background-color: $white;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
 }
