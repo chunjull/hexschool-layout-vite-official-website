@@ -4,11 +4,7 @@
     padding: 0 12px;
 
     @include pad {
-        padding: 0 36px;
-    }
-
-    @include mobile {
-        padding: 0 12px;
+        max-width: 956px;
     }
 }
 

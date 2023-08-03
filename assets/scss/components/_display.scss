@@ -13,3 +13,17 @@
         align-items: $item;
     }
 }
+
+.display-none {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.display-none-mobile {
+    @include mobile {
+        display: none;
+    }
+}

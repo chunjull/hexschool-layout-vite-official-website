@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: $primary;
   padding-top: map-get($spacers, 11);
   padding-bottom: map-get($spacers, 8);
@@ -48,6 +48,10 @@ footer {
   font-size: map-get($font-size, 10);
   gap: map-get($spacers, 8);
 
+  @include mobile {
+    gap: map-get($spacers, 3);
+  }
+
   .socialItem {
     @include pad {
       font-size: map-get($font-size, 9);
@@ -90,6 +94,11 @@ footer {
       vertical-align: middle;
       font-size: map-get($font-size, 8);
       margin-right: map-get($spacers, 6);
+
+      @include mobile {
+        font-size: map-get($font-size, 6);
+        margin-right: map-get($spacers, 4);
+      }
     }
 
     @include mobile {
@@ -98,7 +107,7 @@ footer {
   }
 }
 
-.copyrightList {
+.copyrights {
   padding-top: map-get($spacers, 8);
   border-top: 1px solid $white;
 
@@ -108,7 +117,7 @@ footer {
     gap: map-get($spacers, 3);
   }
 
-  .copyrightItem {
+  .copyright {
     color: $white;
   }
 }
@@ -119,6 +128,14 @@ footer {
   @include mobile {
     flex-direction: column;
     gap: map-get($spacers, 3);
+  }
+
+  .termsItem {
+    font-size: map-get($font-size, 1);
+
+    @include mobile {
+      font-size: map-get($font-size, 3);
+    }
   }
 
   .termsItem a {

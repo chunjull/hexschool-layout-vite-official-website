@@ -6,7 +6,11 @@
 // components
 @import "./components/bg";
 @import "./components/container";
-@import "./components/display-flex";
+@import "./components/display";
+@import "./components/btn";
+// layout
+@import "./layout/header";
+@import "./layout/footer";
 // page
 @import "./pages/index";
 @import "./pages/optical";
@@ -16,5 +20,3 @@
 @import "./pages/faq";
 @import "./pages/blog";
 @import "./pages/news";
-@import "./layout/header";
-@import "./layout/footer";

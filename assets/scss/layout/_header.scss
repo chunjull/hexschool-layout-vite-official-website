@@ -1,4 +1,4 @@
-header {
+.header {
   background-color: $primary;
   padding-top: map-get($spacers, 5);
   padding-bottom: map-get($spacers, 5);
@@ -36,7 +36,10 @@ header {
 }
 
 .navItem {
+  font-size: map-get($font-size, 5);
+  
   @include mobile {
+    font-size: map-get($font-size, 2);
     text-align: center;
     width: 50%;
     border: 1px solid $white;

@@ -1,10 +1,8 @@
 .bgBannerCover {
-    background-size: cover;
-    background-image: url("../assets/home-header.png");
-    background-position: center center;
+    @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
 
     @include pad {
-        background-image: url("../assets/home-header-sm.png");
+        @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
     }
 }
 
@@ -13,16 +11,14 @@
 }
 
 .bgDesignCover {
-    background-size: cover;
-    background-image: url("../assets/index-bg.png");
-    background-position: center center;
+    @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
 
     @include pad {
-        background-image: url("../assets/index-bg-md.png");
+        @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
     }
 
     @include mobile {
-        background-image: url("../assets/index-bg-sm.png");
+        @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
     }
 }
 
