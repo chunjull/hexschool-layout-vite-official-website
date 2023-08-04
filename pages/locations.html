@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glasses</title>
+    <link rel="icon" href="../assets/images/logo-white.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <%- include('./layout/header'); -%>
+
+        <main>
+            <div class="location container">
+                <h2>門市據點</h2>
+                <div class="styled-select">
+                    <label for="location">選擇地區</label>
+                    <select name="location" id="location">
+                        <option selected class="optionSelected">選擇地區</option>
+                        <option value="台北市">台北市</option>
+                        <option value="台中市">台中市</option>
+                        <option value="高雄市">高雄市</option>
+                    </select>
+                </div>
+                <ul class="locationList d-flex">
+                    <li class="locationItem d-flex">
+                        <a href="./locationDetail.html">
+                            <img src="../assets/images/store-1.png" alt="store los">
+                            <div class="locationTitle">
+                                <h5>台北中山旗艦店</h5>
+                            </div>
+                            <ul class="locationTextList">
+                                <li class="locationTextItem"><a href="tel:+02-000-1234"><span class="material-symbols-outlined">
+                                    call
+                                    </span>電話：(02)000-1234</a></li>
+                                <li class="locationTextItem"><span class="material-symbols-outlined">
+                                    schedule
+                                    </span>營業時間：10:00-21:00</li>
+                                <li class="locationTextItem"><a href="#"><span class="material-symbols-outlined">
+                                    location_on
+                                    </span>地址：台北市中山區南京東路25巷2-1號</a></li>
+                            </ul>
+                            <a href="./location.html" class="info">詳細資訊</a>
+                        </a>
+                    </li>
+                    <li class="locationItem d-flex">
+                        <a href="./location.html">
+                            <img src="../assets/images/store-2.png" alt="store los">
+                            <div class="locationTitle">
+                                <h5>台北綠園店</h5>
+                            </div>
+                            <ul class="locationTextList">
+                                <li class="locationTextItem"><a href="tel:+02-000-1234"><span class="material-symbols-outlined">
+                                    call
+                                    </span>電話：(02)000-2345</a></li>
+                                <li class="locationTextItem"><span class="material-symbols-outlined">
+                                    schedule
+                                    </span>營業時間：10:00-21:00</li>
+                                <li class="locationTextItem"><a href="#"><span class="material-symbols-outlined">
+                                    location_on
+                                    </span>地址：台北市中正區復興南路 132-1 號</a></li>
+                            </ul>
+                            <a href="./location.html" class="info">詳細資訊</a>
+                        </a>
+                    </li>
+                    <li class="locationItem d-flex">
+                        <a href="./location.html">
+                            <img src="../assets/images/store-3.png" alt="store los">
+                            <div class="locationTitle">
+                                <h5>台中清水旗艦店</h5>
+                            </div>
+                            <ul class="locationTextList">
+                                <li class="locationTextItem"><a href="tel:+02-000-1234"><span class="material-symbols-outlined">
+                                    call
+                                    </span>電話：(02)000-1234</a></li>
+                                <li class="locationTextItem"><span class="material-symbols-outlined">
+                                    schedule
+                                    </span>營業時間：10:00-21:00</li>
+                                <li class="locationTextItem"><a href="#"><span class="material-symbols-outlined">
+                                    location_on
+                                    </span>地址：台中市清水區經南一路 23 號 8 樓</a></li>
+                            </ul>
+                            <a href="./location.html" class="info">詳細資訊</a>
+                        </a>
+                    </li>
+                    <li class="locationItem d-flex">
+                        <a href="./location.html">
+                            <img src="../assets/images/store-4.png" alt="store los">
+                            <div class="locationTitle">
+                                <h5>高雄中正形象店</h5>
+                            </div>
+                            <ul class="locationTextList">
+                                <li class="locationTextItem"><a href="tel:+02-000-1234"><span class="material-symbols-outlined">
+                                    call
+                                    </span>電話：(07)000-2345</a></li>
+                                <li class="locationTextItem"><span class="material-symbols-outlined">
+                                    schedule
+                                    </span>營業時間：10:00-21:00</li>
+                                <li class="locationTextItem"><a href="#"><span class="material-symbols-outlined">
+                                    location_on
+                                    </span>地址：高雄市苓雅區中正路 38 號 12 樓</a></li>
+                            </ul>
+                            <a href="./location.html" class="info">詳細資訊</a>
+                        </a>
+                    </li>
+                    <li class="locationItem d-flex">
+                        <a href="./location.html">
+                            <img src="../assets/images/store-5.png" alt="store los">
+                            <div class="locationTitle">
+                                <h5>高雄夢時代店</h5>
+                            </div>
+                            <ul class="locationTextList">
+                                <li class="locationTextItem"><a href="tel:+02-000-1234"><span class="material-symbols-outlined">
+                                    call
+                                    </span>電話：(02)000-1234</a></li>
+                                <li class="locationTextItem"><span class="material-symbols-outlined">
+                                    schedule
+                                    </span>營業時間：10:00-21:00</li>
+                                <li class="locationTextItem"><a href="#"><span class="material-symbols-outlined">
+                                    location_on
+                                    </span>地址：高雄市前鎮區中華一路 63 號 6 樓</a></li>
+                            </ul>
+                            <a href="./location.html" class="info">詳細資訊</a>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <%- include('./layout/footer'); -%>
+
+        <script src="https://kit.fontawesome.com/740df9de55.js" crossorigin="anonymous"></script>
+        <script type="module" src="../main.js"></script>
+    </body>
+</html>

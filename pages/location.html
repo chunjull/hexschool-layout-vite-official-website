@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glasses</title>
+    <link rel="icon" href="../assets/images/logo-white.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <%- include('./layout/header'); -%>
+
+        <main>
+            <div class="locationDetail container">
+                <h2>門市據點</h2>
+                <div class="styled-select">
+                    <label for="location">選擇地區</label>
+                    <select name="location" id="location">
+                        <option value="台北中山旗艦店">台北中山旗艦店</option>
+                        <option value="台北綠園店">台北綠園店</option>
+                        <option value="台中清水旗艦店">台中清水旗艦店</option>
+                        <option value="高雄中正形象店">高雄中正形象店</option>
+                        <option value="高雄夢時代店">高雄夢時代店</option>
+                    </select>
+                </div>
+                <div class="locationDetailList d-flex justify-content-space-between">
+                    <div class="locationDetailItem d-flex">
+                        <img src="../assets/images/store-1.png" alt="store location">
+                        <div class="locationContent">
+                            <div class="locationTitle">
+                                <h5>台北中山旗艦店</h5>
+                            </div>
+                            <ul class="locationTextList">
+                                <li class="locationTextItem"><a href="tel:+02-000-1234"><span class="material-symbols-outlined">
+                                    call
+                                    </span>電話：(02)000-1234</a></li>
+                                <li class="locationTextItem"><span class="material-symbols-outlined">
+                                    schedule
+                                    </span>營業時間：10:00-21:00</li>
+                                <li class="locationTextItem"><a href="#"><span class="material-symbols-outlined">
+                                    location_on
+                                    </span>地址：台北市中山區南京東路25巷2-1號</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="locationDetailImage">
+                        <img src="../assets/images/map@2x.png" alt="map">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <%- include('./layout/footer'); -%>
+
+        <script src="https://kit.fontawesome.com/740df9de55.js" crossorigin="anonymous"></script>
+        <script type="module" src="../main.js"></script>
+    </body>
+</html>

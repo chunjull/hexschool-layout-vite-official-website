@@ -1,0 +1,30 @@
+.blogNav {
+    padding-top: map-get($spacers, 3);
+    padding-bottom: map-get($spacers, 3);
+
+    @include mobile {
+        display: none;
+    }
+
+    a {
+        color: $white;
+        font-weight: map-get($font-weight, 3);
+        font-size: map-get($font-size, 6);
+
+        @include pad {
+            font-size: map-get($font-size, 6);
+        }
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    .blogNavList {
+        gap: map-get($spacers, 11);
+    }
+
+    .searchBar span {
+        font-size: map-get($font-size, 9);
+    }
+}

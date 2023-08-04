@@ -1,0 +1,42 @@
+.faq {
+    padding-top: map-get($spacers, 15);
+    padding-bottom: map-get($spacers, 14);
+
+    @include mobile {
+        padding-top: map-get($spacers, 10);
+        padding-bottom: map-get($spacers, 13);
+    }
+
+    h2 {
+        font-size: map-get($font-size, 10);
+        font-weight: map-get($font-weight, 3);
+        border-left: 8px solid $primary;
+        padding-left: map-get($spacers, 5);
+        margin-bottom: map-get($spacers, 8);
+
+        @include mobile {
+            font-size: map-get($font-size, 6);
+            margin-bottom: map-get($spacers, 7);
+        }
+    }
+
+    h3 {
+        font-size: map-get($font-size, 6);
+        font-weight: map-get($font-weight, 3);
+        margin-bottom: map-get($spacers, 7);
+    }
+
+    .faqItem ~ .faqItem {
+        margin-top: map-get($spacers, 8);
+
+        @include mobile {
+            margin-top: map-get($spacers, 7);
+        }
+    }
+
+    h4 {
+        font-size: map-get($font-size, 5);
+        font-weight: map-get($font-weight, 3);
+        margin-bottom: map-get($spacers, 3);
+    }
+}

@@ -16,6 +16,12 @@
     }
 }
 
+@mixin pad-lg {
+    @media (max-width: 1223px) {
+        @content;
+    }
+}
+
 @mixin bg-cover($url) {
     background-image: url($url);
     background-size: cover;

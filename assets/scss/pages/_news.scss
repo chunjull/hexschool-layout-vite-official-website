@@ -1,0 +1,242 @@
+.breadcrumb {
+    padding-top: map-get($spacers, 7);
+    padding-bottom: map-get($spacers, 3);
+
+    li {
+        display: inline;
+        color: $primary;
+
+        a {
+            display: inline;
+            color: $black;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    li+li::before {
+        color: $black;
+        content: "/\00a0";
+    }
+}
+
+.newsTagList {
+    gap: map-get($spacers, 5);
+    margin-bottom: map-get($spacers, 3);
+
+    li:hover a {
+        color: $success;
+    }
+}
+
+.blogpagePad {
+    margin-bottom: map-get($spacers, 13);
+
+    @include mobile {
+        margin-bottom: map-get($spacers, 12);
+    }
+
+    .blogpageListPad {
+        display: none;
+        border-top: 1px solid $black;
+        padding-top: map-get($spacers, 7);
+
+        @include pad {
+            display: flex;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+        a {
+            color: $black;
+
+            &:hover {
+                color: $gray-600;
+
+                span {
+                    color: $gray-600;
+                }
+            }
+        }
+
+        span {
+            vertical-align: top;
+            color: $black;
+            margin-right: map-get($spacers, 4);
+            margin-left: map-get($spacers, 4);
+        }
+    }
+}
+
+.newsContent {
+    gap: map-get($spacers, 7);
+
+    .article {
+        width: 66%;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: map-get($font-size, 10);
+
+            @include mobile {
+                font-size: map-get($font-size, 6);
+            }
+        }
+
+        h3 {
+            font-size: map-get($font-size, 6);
+            margin-bottom: map-get($spacers, 5);
+
+            @include mobile {
+                font-size: map-get($font-size, 2);
+            }
+        }
+
+        img {
+            margin-bottom: map-get($spacers, 3);
+        }
+
+        img ~ img {
+            margin-top: map-get($spacers, 10);
+
+            @include pad {
+                margin-top: map-get($spacers, 7);
+            }
+        }
+
+        p {
+            color: $gray-600;
+        }
+
+        .share {
+            gap: map-get($spacers, 5);
+            padding-bottom: map-get($spacers, 5);
+
+            @include mobile {
+                display: none;
+            }
+
+            p {
+                color: $black;
+                font-family: $font-family-eng;
+                font-weight: map-get($font-weight, 3);
+                margin-bottom: 0;
+            }
+        }
+
+        .shareList {
+            gap: map-get($spacers, 5);
+
+            .shareItem {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+
+            .fa-brands {
+                vertical-align: middle;
+                color: $black;
+                font-size: map-get($font-size, 7);
+            }
+        }
+
+        .blogpageList {
+            border-top: 1px solid $black;
+            padding-top: map-get($spacers, 7);
+
+            @include pad {
+                display: none;
+            }
+
+            a {
+                color: $black;
+
+                &:hover {
+                    color: $gray-600;
+
+                    span {
+                        color: $gray-600;
+                    }
+                }
+            }
+
+            span {
+                vertical-align: top;
+                color: $black;
+                margin-right: map-get($spacers, 4);
+                margin-left: map-get($spacers, 4);
+            }
+        }
+    }
+
+    .sidebar {
+        width: 20%;
+
+        @include mobile {
+            display: none;
+        }
+
+        h2 {
+            font-family: $font-family-eng;
+            font-size: map-get($font-size, 7);
+            font-weight: map-get($font-weight, 3);
+            color: $primary;
+
+            @include pad {
+                font-size: map-get($font-size, 2);
+                margin-bottom: map-get($spacers, 3);
+            }
+
+            span {
+                vertical-align: middle;
+                font-size: map-get($font-size, 10);
+                font-weight: map-get($font-weight, 3);
+                color: $primary;
+
+                @include pad {
+                    font-size: map-get($font-size, 6);
+                }
+            }
+        }
+
+        .tagList {
+            gap: map-get($spacers, 7);
+
+            @include pad {
+                gap: map-get($spacers, 5);
+            }
+
+            li:hover a {
+                color: $success;
+            }
+        }
+    }
+}
+
+.tag {
+    color: $primary;
+    font-family: $font-family-eng;
+    font-size: map-get($font-size, 6);
+    font-weight: map-get($font-weight, 3);
+
+    @include pad {
+        font-size: map-get($font-size, 2);
+    }
+}
+
+.tagMain {
+    color: $primary;
+    font-family: $font-family-eng;
+    font-size: map-get($font-size, 6);
+    font-weight: map-get($font-weight, 3);
+
+    @include mobile {
+        font-size: map-get($font-size, 2);
+    }
+}

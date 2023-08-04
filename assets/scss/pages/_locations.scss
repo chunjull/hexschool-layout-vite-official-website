@@ -1,0 +1,129 @@
+.location {
+    padding-top: map-get($spacers, 15);
+    padding-bottom: map-get($spacers, 14);
+
+    @include mobile {
+        padding-top: map-get($spacers, 10);
+        padding-bottom: map-get($spacers, 13);
+    }
+
+    h2 {
+        font-size: map-get($font-size, 10);
+        font-weight: map-get($font-weight, 3);
+        border-left: 8px solid $primary;
+        padding-left: map-get($spacers, 5);
+        margin-bottom: map-get($spacers, 8);
+
+        @include mobile {
+            font-size: map-get($font-size, 6);
+            margin-bottom: map-get($spacers, 7);
+        }
+    }
+}
+
+.styled-select {
+    label {
+        font-size: map-get($font-size, 6);
+        padding-right: map-get($spacers, 5);
+
+        @include mobile {
+            font-size: map-get($font-size, 2);
+        }
+    }
+
+    select {
+        color: $gray-700;
+        width: 23.5%;
+        font-size: map-get($font-size, 6);
+        padding-top: map-get($spacers, 2);
+        padding-bottom: map-get($spacers, 2);
+        padding-left: map-get($spacers, 4);
+        padding-right: map-get($spacers, 4);
+        position: relative;
+
+        @include mobile {
+            font-size: map-get($font-size, 3);
+        }
+    }
+}
+
+.locationList {
+    margin-top: map-get($spacers, 10);
+    gap: map-get($spacers, 7);
+    flex-wrap: wrap;
+
+    @include mobile {
+        margin-top: map-get($spacers, 7);
+    }
+
+    .locationItem {
+        flex-direction: column;
+        width: 32%;
+
+        @include pad-lg {
+            width: 31.6%;
+        }
+
+        @include pad {
+            width: 48%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &:hover .info {
+            background-color: $gray-500;
+        }
+
+        .locationTitle {
+            padding-top: map-get($spacers, 3);
+            padding-bottom: map-get($spacers, 3);
+            padding-left: map-get($spacers, 7);
+            padding-right: map-get($spacers, 7);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+
+            h5 {
+                color: $black;
+                font-size: map-get($font-size, 6);
+            }
+        }
+
+        .locationTextList {
+            font-size: map-get($font-size, 5);
+            padding-top: map-get($spacers, 5);
+            padding-bottom: map-get($spacers, 3);
+            padding-left: map-get($spacers, 7);
+            padding-right: map-get($spacers, 7);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            flex-grow: 1;
+
+            .locationTextItem {
+                margin-bottom: map-get($spacers, 3);
+
+                a {
+                    color: $black;
+
+                    &:hover {
+                        color: $gray-500;
+                    }
+                }
+
+                span {
+                    vertical-align: middle;
+                    margin-right: map-get($spacers, 4);
+                }
+            }
+        }
+
+        .info {
+            color: $white;
+            background-color: $black;
+            text-align: center;
+            font-size: map-get($font-size, 4);
+            padding-top: map-get($spacers, 5);
+            padding-bottom: map-get($spacers, 5);
+            width: 100%;
+        }
+    }
+}

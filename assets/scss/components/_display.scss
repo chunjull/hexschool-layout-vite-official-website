@@ -27,3 +27,17 @@
         display: none;
     }
 }
+
+.display-pad {
+    display: none;
+
+    @include pad {
+        display: inline-block;
+    }
+}
+
+.display-none-pad {
+    @include pad {
+        display: none;
+    }
+}
